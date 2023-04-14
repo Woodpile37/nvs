@@ -1,7 +1,7 @@
 # LIST Command - Node Version Switcher
 
-    nvs ls [filter]
-    nvs list [filter]
+        nvs ls [filter]
+        nvs list [filter]
 
 Lists local node versions that are immediately available to use.
 

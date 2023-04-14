@@ -1,8 +1,8 @@
 # AUTO Command - Node Version Switcher
 
-    nvs auto
-    nvs auto on
-    nvs auto off
+        nvs auto
+        nvs auto on
+        nvs auto off
 
 When invoked with no parameters, `nvs auto` searches for the nearest `.node-version` file in the current directory or parent directories. If found, the version specified in the file is then downloaded (if necessary) and used. If no `.node-version` file is found, then the default (linked) version, if any, is used.
 
