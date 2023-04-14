@@ -32,8 +32,7 @@ const getGithubRemoteVersionsAsync = nvsList.getGithubRemoteVersionsAsync;
 const getNetworkRemoteVersionsAsync = nvsList.getNetworkRemoteVersionsAsync;
 
 nvsList.__set__('fs', mockFs);
-nvsList.__set__('http', mockHttp);
-nvsList.__set__('https', mockHttp);
+nvsList.__set__('httpGet', mockHttp.get.bind(mockHttp));
 
 const bin = (process.platform === 'win32' ? '' : 'bin');
 const exe = (process.platform === 'win32' ? 'node.exe' : 'node');
@@ -517,7 +516,7 @@ test('Get remote versions - network path', t => {
 
 	return getNetworkRemoteVersionsAsync(
 		'test1',
-		testNetworkPath + '{version}\\{arch}.msi'
+		testNetworkPath + '{version}\\{arch}.msi',
 	).then(result => {
 		t.truthy(result);
 		t.is(result.length, 2);
