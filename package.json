@@ -28,7 +28,7 @@
 		"eslint-plugin-standard": "^4.1.0",
 		"nyc": "^15.1.0",
 		"rewire": "^6.0.0",
-		"typescript": "^3.7.2"
+		"typescript": "^5.1.6"
 	},
 	"ava": {
 		"files": [
