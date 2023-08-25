@@ -27,7 +27,7 @@
 		"eslint-plugin-promise": "^6.1.1",
 		"eslint-plugin-standard": "^4.0.0",
 		"nyc": "^15.1.0",
-		"rewire": "^2.5.2",
+		"rewire": "^6.0.0",
 		"typescript": "^5.1.6"
 	},
 	"ava": {
